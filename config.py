@@ -1,9 +1,3 @@
-###########################
-
-
-
-
-
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
