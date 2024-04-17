@@ -1,6 +1,6 @@
 ######################
 #                    #
-#   config Qtile     #
+#      config        #
 #        by          #
 #  @silviuxgaming    #
 #                    #
