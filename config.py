@@ -1,10 +1,11 @@
-##########################
-#                        #
-#       config           #
-#         by             #
-#   @silviuxgaming       #
-#                        #
-##########################
+######################
+#                    #
+#   config Qtile     #
+#        by          #
+#  @silviuxgaming    #
+#                    #
+#                    #
+######################
 
 
 from libqtile import bar, layout, qtile, widget
