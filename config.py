@@ -103,10 +103,18 @@ keys = [
     Key([mod], "F10", lazy.spawn("flameshot gui"), desc="Take a screenshot."),
 
 
-    # Volume control bindings (using function keys and XF86Audio keys)
+    # Volume control bindings
     Key([mod], "F5", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5% "),desc="Lower volume"),
     Key([mod], "F6", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5% "),desc="Raise volume"),
     Key([mod], "F3", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle "),desc="Mute volume toggle"),
+
+
+# Brightness control bindings
+Key([mod], "F9", lazy.spawn("brightnessctl set +5%")),
+Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
+
+Key([mod], "F8", lazy.spawn("brightnessctl set 5%-")),
+Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
 
 
 
