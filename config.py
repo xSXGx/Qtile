@@ -16,6 +16,8 @@ import subprocess
 
 from libqtile import hook
 
+
+
 @hook.subscribe.startup
 def autostart():
       home = os.path.expanduser('~/.config/qtile/autostart.sh')
@@ -76,7 +78,7 @@ keys = [
 
 
     # Rofi Integration
-    Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Launch an application."),
+    Key([mod], "d", lazy.spawn("rofi -show drun -dpi 150"), desc="Launch an application."),
     Key(["mod1"], "Tab", lazy.spawn("rofi -show window"), desc="Switch between windows."),
 
 
@@ -247,5 +249,4 @@ screens = [
         wallpaper_mode='fill',
     )
 ]
-
 
